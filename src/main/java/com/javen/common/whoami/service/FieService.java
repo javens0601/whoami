@@ -16,7 +16,7 @@ import java.util.Set;
 
 /**
  * @Description
- * @Author: enmonster
+ * @Author: javen
  * @CreateTime: 2025/7/21 18:59
  */
 public class FieService
@@ -28,8 +28,8 @@ public class FieService
         Map<String, Set<String>> flsMap2 = new HashMap<>();
         ObjectMapper mapper = new ObjectMapper();
 
-        //Path path = Path.of("/Users/enmonster/Desktop/flslog");
-        Path path = Path.of("/Users/enmonster/Desktop/fldown1.log");
+        //Path path = Path.of("/Users/javen/Desktop/flslog");
+        Path path = Path.of("/Users/javen/Desktop/fldown1.log");
 
         List<String> lines = Files.readAllLines(path);
         for (String line : lines)

@@ -5,7 +5,7 @@ import com.javen.common.whoami.dto.SingletonEnum;
 
 /**
  * @Description
- * @Author: enmonster
+ * @Author: javen
  * @CreateTime: 2025/7/9 07:01
  */
 public class SingletonService

@@ -6,7 +6,7 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * @Description
- * @Author: enmonster
+ * @Author: javen
  * @CreateTime: 2025/6/30 08:24
  */
 public class CompleteFutureApplyToEitherService

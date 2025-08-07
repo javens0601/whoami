@@ -2,7 +2,7 @@ package com.javen.common.whoami.dto;
 
 /**
  * @Description
- * @Author: enmonster
+ * @Author: javen
  * @CreateTime: 2025/7/9 06:59
  */
 public enum SingletonEnum
