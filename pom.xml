@@ -59,6 +59,12 @@
             <artifactId>jts-core</artifactId>
             <version>1.18.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.locationtech.spatial4j/spatial4j -->
+        <dependency>
+            <groupId>org.locationtech.spatial4j</groupId>
+            <artifactId>spatial4j</artifactId>
+            <version>0.8</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
