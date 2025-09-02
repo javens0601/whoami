@@ -1,6 +1,9 @@
 package com.javen.common.datastruct.sort;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Description
@@ -17,7 +20,9 @@ public class SortMain {
         //bubbleSortWithFlag(nums); // 冒泡排序 优化
         //insertionSort(nums); // 插入排序
         //quickSort(nums, 0, nums.length-1); // 快速排序
-        quickSort2(nums, 0, nums.length-1); // 快速排序
+        //quickSort2(nums, 0, nums.length-1); // 快速排序
+        mergeSort(nums, 0, nums.length - 1); // 归并排序
+
 
         Arrays.stream(nums).forEach(System.out::print);
 
@@ -159,4 +164,15 @@ public class SortMain {
     //
     //划分阶段：可以使用“迭代”替代“递归”来实现链表划分工作，从而省去递归使用的栈帧空间。
     //合并阶段：在链表中，节点增删操作仅需改变引用（指针）即可实现，因此合并阶段（将两个短有序链表合并为一个长有序链表）无须创建额外链表
+    private static void mergeSort(int[] nums, int left, int right) {
+
+    }
+
+    // 堆排序 一种基于堆数据结构实现的高效排序算法
+    // 输入数组并建立小顶堆，此时最小元素位于堆顶
+    // 不断执行出堆操作，依次记录出堆元素，即可得到从小到大排序的序列
+    private static void heapSort(int[] nums) {
+
+    }
+
 }
