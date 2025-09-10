@@ -20,11 +20,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] nums = new int[]{1,0,1,0,1,0,2,2,0,3};
-        moveZeroes2(nums);
-        for (int num : nums) {
-            System.out.println(num);
-        }
+        String str = "abcabcdeeeacdefg";
+        int l = lengthOfLongestSubstring(str);
+        System.out.println(l);
     }
 
     // 两数之和
@@ -77,7 +75,7 @@ public class Main {
         return maxSpan;
     }
 
-    // 移动0
+    // 移动0 双重循环 从后往前遍历
     public static void moveZeroes(int[] nums) {
         int length = nums.length;
         for (int i = length-1; i>=0; i--) {
@@ -90,6 +88,7 @@ public class Main {
         }
     }
 
+    // 双指针 交换
     public static void moveZeroes2(int[] nums) {
         int i=0,j=0;
         while (j < nums.length) {
@@ -126,5 +125,26 @@ public class Main {
     // 三数之和
     public static List<List<Integer>> threeSum(int[] nums) {
 
+        return null;
+    }
+
+    // 无重复字符的最长子串
+    // 给定一个字符串 s ，请你找出其中不含有重复字符的 最长 子串 的长度。
+    public static int lengthOfLongestSubstring(String s) {
+        char[] charArray = s.toCharArray();
+        int p1=0,p2=0;
+        int maxSpan = 0;
+
+        while (p2 <= charArray.length) {
+            if (p2 == charArray.length) {
+                maxSpan = Math.max(maxSpan, p2-p1);
+            } else
+            if (p1!=p2 && charArray[p1] == charArray[p2])  {
+                maxSpan = Math.max(maxSpan, p2-p1);
+                p1++;
+            }
+            p2++;
+        }
+        return maxSpan;
     }
 }
